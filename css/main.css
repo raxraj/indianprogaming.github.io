@@ -1,29 +1,18 @@
-/*------------------------------------------------------------------
-Project:  ComingSoon
-Version:  
-Last change:  
-Assigned to:  Bach Le
-Primary use:  
--------------------------------------------------------------------*/
 
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
 
 @font-face {
   font-family: Montserrat-Regular;
-  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 @font-face {
   font-family: Montserrat-SemiBold;
-  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
 }
 
 @font-face {
   font-family: Playlist Script;
-  src: url('../fonts/Playlist/Playlist Script.otf'); 
+  src: url('../fonts/Playlist/Playlist Script.otf');
 }
 
 
@@ -32,6 +21,52 @@ Primary use:
 [ RS PLUGIN ]*/
 /*---------------------------------------------*/
 .container {max-width: 1200px;}
+body{
+  height: 100vh !important;
+}
+
+.branding{
+  font-family: Pacifico;
+  font-size: 1.8em;
+}
+indian{
+  color: #FFB320;
+}
+
+.hero-2{
+  margin-left: 20% !important;
+  margin-right: 20% !important;
+  font-family: Lato !important;
+  animation:  fadeintext 3.5s ease-in ;
+  opacity: 1;
+}
+@keyframes fadeintext {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+/*TYPEWRITER EFFECT*/
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #FFB320; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FFB320; }
+}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -53,15 +88,16 @@ Primary use:
 /*---------------------------------------------*/
 .input100 {
   display: block;
+  color: white;
   width: 100%;
   height: 100%;
   padding: 0 40px 0 3px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,1);
   background-color: rgba(255,255,255, 0.0);
 }
 
 .input100:focus {
-  background-color: rgba(255,255,255, 0.05);
+  background-color: rgba(255,255,255, 0.1);
 }
 
 
@@ -268,7 +304,7 @@ Primary use:
 
 
 /*==================================================================
-   WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE  
+   WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE
 ==================================================================*/
 .where1 {
   align-self: flex-start;
@@ -277,7 +313,7 @@ Primary use:
 
 
 /*==================================================================
- HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW 
+ HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW
 ==================================================================*/
 .placeholder0::-webkit-input-placeholder { color: #999999;}
 .placeholder0:-moz-placeholder { color: #999999;}
@@ -321,22 +357,22 @@ Primary use:
 }
 
 .how-btn1:hover {
-  background-color: #fff;
+  background-color: #FFB320;
   color: #555;
 }
 
 /*---------------------------------------------*/
 .how-social {
-  color: #999;
+  color: #FFF;
   font-size: 18px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,1);
   background-color: transparent;
   border-radius: 50%;
 }
 
-.how-social:hover {
-  background-color: #fff;
-  color: #555;
+.how-social:hover  {
+  background-color: #FF0000;
+  color: white;
 }
 
 /*---------------------------------------------*/
@@ -522,7 +558,7 @@ Primary use:
    .respon1 {
     font-size: 80px;
   }
-  
+
 }
 
 
